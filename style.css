@@ -1,0 +1,792 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* font-family: "Montserrat", sans-serif; */
+}
+
+figure {
+	position: fixed;
+	bottom: 20px;
+	right: 35px;
+}
+
+figure h2 {
+	position: absolute;
+	/* z-index: 1; */
+	font-style: normal;
+	font-weight: 800;
+	font-size: 50px;
+	color: #6E74FF12;
+}
+
+figure span {
+	font-size: 32px;
+}
+
+figure h1 {
+	font-size: 15px;
+	font-weight: 400;
+	/* z-index: 2; */
+	margin-left: 22px;
+	margin-top: 22px;
+}
+
+.sidebar {
+    position:fixed;
+    top: 0px;
+    left: 0px;
+    width: 119px;
+    background-color: #20154D;
+    height: 100vh;
+}
+
+.main {
+    margin-left: 119px;
+    height: 350vh;
+    background: #F1F1FF;
+    ;
+}
+
+
+.head {
+    height: 127px;
+    /* background: #e90404 */
+}
+
+#text {
+    position: absolute;
+    width: 389px;
+    height: 37px;
+    left: 259px;
+    top: 52px;
+
+    /* font-family: Montserrat; */
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 123.69%;
+    /* or 45px */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.14em;
+
+    color: #000000;
+    background-color: transparent;
+    border: none;
+    border-bottom: solid 3px black;
+    /* text-decoration: underline; */
+}
+
+#text:focus {
+  outline: none;
+}
+
+.ques {
+  position: absolute;
+  width: 130px;
+  height: 29px;
+  left: 870px;
+  top: 56px;
+  
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  
+  color: #000000;  
+}
+
+.response {
+  position: absolute;
+  width: 130px;
+  height: 29px;
+  left: 1124px;
+  top: 56px;
+  
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  
+  color: #000000;  
+}
+
+.switch {
+    /* position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px; */
+    position: absolute;
+    width: 75px;
+    height: 33px;
+    left: 1012px;
+    top: 54px;
+    
+    background: #F3F3FF;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 50px;    
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+.img {
+    position: absolute;
+    width: 648px;
+    height: 156px;
+    left: 262px;
+    top: 174px;
+
+    background: #F3F3FF;
+    box-shadow: -8px -7px 16px #FFFFFF, 8px 7px 60px #CFCFD9;
+    border-radius: 11px;
+}
+
+.rect_img {
+    position: absolute;
+    width: 261px;
+    height: 51px;
+    left: 55px;
+    top: 55px;
+    
+    background: #F8FBFF;
+    border-radius: 11px;
+    /* transform: matrix(1, 0, 0, -1, 0, 0);    */
+}
+
+.add_img {
+  position: absolute;
+  width: 261px;
+  height: 45px;
+  left: 5px;
+  top: 5px;
+  
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 123.69%;
+  /* identical to box height, or 45px */
+  
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.14em;
+  
+  color: #000000;  
+}
+
+.logo_img {
+  position: absolute;
+  width: 67px;
+  height: 78px;
+  left: 335px;
+  top: 45px;
+  
+  background: #D3D5FF;
+  border: 2px solid #000000;
+  box-sizing: border-box;
+  border-radius: 20px;  
+}
+
+.line1{
+  position: absolute;
+  width: 2px;
+  height: 36px;
+  left: 30px;
+  top: 20px;
+  
+  background: #000000;
+  border-radius: 50px;  
+}
+
+.line2{
+  position: absolute;
+  width: 2px;
+  height: 33px;
+  left: 30px;
+  top: 20px;
+  
+  background: #000000;
+  border-radius: 50px;
+  transform: rotate(90deg);
+  
+}
+
+.optional{
+  position: absolute;
+  width: 129px;
+  height: 30px;
+  left: 870px;
+  top: 234px;
+  
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  /* line-height: 123.69%; */
+  /* identical to box height, or 30px */
+  
+  /* display: flex; */
+  align-items: center;
+  letter-spacing: 0.14em;
+  
+  color: #000000;
+  
+  transform: rotate(90deg);  
+}
+
+.heading1 {
+    position: absolute;
+    width: 648px;
+    height: 169px;
+    left: 259px;
+    top: 394px;
+    background: #F3F3FF;
+    box-shadow: -8px -7px 16px #FFFFFF, 8px 7px 60px #CFCFD9;
+    border-radius: 11px;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #20154D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: absolute;
+    width: 25px;
+    height: 14px;
+    left: 560px;
+    top: 0px;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+.cross {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 620px;
+  top: 10px;
+  font-weight: 700;
+}
+
+.rect_heading1{
+  position: absolute;
+  width: 351px;
+  height: 51px;
+  left: 50px;
+  top: 20px;
+  
+  background: #F8FBFF;
+  border-radius: 11px; 
+} 
+
+.add_heading1 {
+  position: absolute;
+  width: 389px;
+  height: 37px;
+  left: 8px;
+  top: 8px;
+  
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 123.69%;
+  /* or 45px */
+  
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.14em;
+  
+  color: #000000;  
+}
+
+#long_descript {
+  position: absolute;
+  width: 389px;
+  height: 37px;
+  left: 50px;
+  top: 100px;
+  
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 123.69%;
+  /* or 25px */
+  
+  /* display: flex; */
+  align-items: center;
+  letter-spacing: 0.14em;
+  
+  color: #000000;
+  
+}
+
+.heading2 {
+    position: absolute;
+    width: 648px;
+    height: 169px;
+    left: 262px;
+    top: 627px;
+
+    background: #F3F3FF;
+    box-shadow: -8px -7px 16px #FFFFFF, 8px 7px 60px #CFCFD9;
+    border-radius: 11px
+}
+
+.rect_heading2 {
+  position: absolute;
+  width: 351px;
+  height: 51px;
+  left: 50px;
+  top: 20px;
+  
+  background: #F8FBFF;
+  border-radius: 11px;  
+}
+
+.add_heading2 {
+  position: absolute;
+  width: 389px;
+  height: 37px;
+  left: 8px;
+  top: 8px;
+  
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 123.69%;
+  /* or 45px */
+  
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.14em;
+  
+  color: #000000;
+}
+
+#short_descript {
+  position: absolute;
+  width: 389px;
+  height: 37px;
+  left: 50px;
+  top: 100px;
+  
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 123.69%;
+  /* or 22px */
+  
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.14em;
+  
+  color: #000000;
+}
+
+.heading3 {
+    position: absolute;
+    width: 648px;
+    height: 243px;
+    left: 262px;
+    top: 860px;
+
+    background: #F3F3FF;
+    box-shadow: -8px -7px 16px #FFFFFF, 8px 7px 60px #CFCFD9;
+    border-radius: 11px;
+}
+
+.rect_heading3 {
+  position: absolute;
+  width: 351px;
+  height: 51px;
+  left: 50px;
+  top: 20px;
+  
+  background: #F8FBFF;
+  border-radius: 11px;  
+}
+
+.add_heading3 {
+  position: absolute;
+  width: 389px;
+  height: 37px;
+  left: 8px;
+  top: 8px;
+  
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 123.69%;
+  /* or 45px */
+  
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.14em;
+  
+  color: #000000;
+}
+
+.option {
+  position: absolute;
+  width: 107px;
+  height: 113px;
+  left: 343px;
+  top: 962px;  
+}
+
+.label {
+  margin-left: 10px;
+}
+
+.heading4 {
+    position: absolute;
+    width: 648px;
+    height: 169px;
+    left: 262px;
+    top: 1167px;
+    
+    background: #F3F3FF;
+    box-shadow: -8px -7px 16px #FFFFFF, 8px 7px 60px #CFCFD9;
+    border-radius: 11px;    
+}
+
+.rect_heading4 {
+  position: absolute;
+  width: 351px;
+  height: 51px;
+  left: 50px;
+  top: 20px;
+  
+  background: #F8FBFF;
+  border-radius: 11px;  
+}
+
+.add_heading4 {
+  position: absolute;
+  width: 389px;
+  height: 37px;
+  left: 8px;
+  top: 8px;
+  
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 123.69%;
+  /* or 45px */
+  
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.14em;
+  
+  color: #000000;
+}
+
+#long_text {
+  position: absolute;
+  width: 389px;
+  height: 37px;
+  left: 50px;
+  top: 100px;
+  
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 123.69%;
+  /* or 22px */
+  
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.14em;
+  
+  color: #000000;
+}
+
+.heading5 {
+    position: absolute;
+    width: 648px;
+    height: 243px;
+    left: 262px;
+    top: 1400px;
+    
+    background: #F3F3FF;
+    box-shadow: -8px -7px 16px #FFFFFF, 8px 7px 60px #CFCFD9;
+    border-radius: 11px;
+}
+
+.rect_heading5 {
+  position: absolute;
+  width: 351px;
+  height: 51px;
+  left: 50px;
+  top: 20px;
+  
+  background: #F8FBFF;
+  border-radius: 11px;  
+}
+
+.add_heading5 {
+  position: absolute;
+  width: 389px;
+  height: 37px;
+  left: 8px;
+  top: 8px;
+  
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 123.69%;
+  /* or 45px */
+  
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.14em;
+  
+  color: #000000;
+}
+
+.opt_heading5 {
+  position: absolute;
+  width: 107px;
+  height: 113px;
+  left: 50px;
+  top: 100px;  
+}
+
+.heading6 {
+    position: absolute;
+    width: 648px;
+    height: 169px;
+    left: 262px;
+    top: 1696px;
+    
+    background: #F3F3FF;
+    box-shadow: -8px -7px 16px #FFFFFF, 8px 7px 60px #CFCFD9;
+    border-radius: 11px;
+}
+
+.rect_heading6 {
+  position: absolute;
+  width: 351px;
+  height: 51px;
+  left: 50px;
+  top: 20px;
+  
+  background: #F8FBFF;
+  border-radius: 11px;  
+}
+
+.add_heading6 {
+  position: absolute;
+  width: 389px;
+  height: 37px;
+  left: 8px;
+  top: 8px;
+  
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 123.69%;
+  /* or 45px */
+  
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.14em;
+  
+  color: #000000;
+}
+
+.upload {
+  position: absolute;
+  width: 152px;
+  height: 33px;
+  left: 50px;
+  top: 100px; 
+  background: rgba(248, 251, 255, 0.85);
+border: 1px solid #000000;
+box-sizing: border-box;
+border-radius: 11px;
+}
+
+.another {
+    position: absolute;
+    width: 648px;
+    height: 169px;
+    left: 262px;
+    top: 1919px;
+    
+    background: #F3F3FF;
+    box-shadow: -8px -7px 16px #FFFFFF, 8px 7px 60px #CFCFD9;
+    border-radius: 11px;    
+}
+
+.rect_another {
+  position: absolute;
+  width: 450px;
+  height: 51px;
+  left: 50px;
+  top: 50px;
+  
+  background: #F8FBFF;
+  border-radius: 11px;  
+}
+
+.add_field {
+  position: absolute;
+  width: 600px;
+  height: 37px;
+  left: 8px;
+  top: 8px;
+  
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 123.69%;
+  /* or 45px */
+  
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.14em;
+  
+  color: #000000;
+}
+
+.logo_another {
+  position: absolute;
+  width: 67px;
+  height: 78px;
+  left: 525px;
+  top: 40px;
+  
+  background: #D3D5FF;
+  border: 2px solid #000000;
+  box-sizing: border-box;
+  border-radius: 20px;  
+}
+
+.another1{
+  position: absolute;
+  width: 2px;
+  height: 36px;
+  left: 30px;
+  top: 20px;
+  
+  background: #000000;
+  border-radius: 50px;  
+}
+
+.another2{
+  position: absolute;
+  width: 2px;
+  height: 33px;
+  left: 30px;
+  top: 20px;
+  
+  background: #000000;
+  border-radius: 50px;
+  transform: rotate(90deg);
+  
+}
